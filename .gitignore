@@ -1,0 +1,14 @@
+# Environment
+.env
+.env.local
+
+# Uploads (user uploaded files - exclude from repo)
+/uploads/*
+!/uploads/.gitkeep
+
+# PHP logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
