@@ -1,9 +1,9 @@
 <?php
-$host     = $_ENV['DB_HOST']     ?? getenv('DB_HOST')     ?: 'localhost';
-$username = $_ENV['DB_USERNAME'] ?? getenv('DB_USERNAME') ?: 'root';
-$password = $_ENV['DB_PASSWORD'] ?? getenv('DB_PASSWORD') ?: '';
-$database = $_ENV['DB_DATABASE'] ?? getenv('DB_DATABASE') ?: 'dbmagangid';
-$useSSL   = filter_var($_ENV['DB_SSL'] ?? getenv('DB_SSL') ?: 'false', FILTER_VALIDATE_BOOLEAN);
+$host     = trim($_ENV['DB_HOST']     ?? getenv('DB_HOST')     ?: 'localhost');
+$username = trim($_ENV['DB_USERNAME'] ?? getenv('DB_USERNAME') ?: 'root');
+$password = trim($_ENV['DB_PASSWORD'] ?? getenv('DB_PASSWORD') ?: '');
+$database = trim($_ENV['DB_DATABASE'] ?? getenv('DB_DATABASE') ?: 'dbmagangid');
+$useSSL   = filter_var(trim($_ENV['DB_SSL'] ?? getenv('DB_SSL') ?: 'false'), FILTER_VALIDATE_BOOLEAN);
 
 $conn = mysqli_init();
 
