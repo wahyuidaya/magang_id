@@ -114,7 +114,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- Demo Banner -->
   <div class="demo-banner">
-    <a href="https://wahyuidaya.github.io" class="back-link">← Kembali ke Portofolio Wahyu Idaya</a><br>
+    <div style="margin-bottom: 8px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+      <a href="../portal.php" class="back-link" style="color: #6ee7b7; font-weight: 700;">← Kembali ke Portal Magang ID</a>
+      <a href="https://wahyuidaya.github.io" class="back-link">Portofolio Wahyu Idaya ↗</a>
+    </div>
     <strong>🔐 Demo Akun — Klik untuk mengisi otomatis:</strong>
     <div class="demo-accounts">
       <button class="demo-btn" onclick="fillDemo('mahasiswa@gmail.com','mahasiswa123')">
@@ -199,6 +202,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </section>
 
   <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const p = new URLSearchParams(window.location.search);
+      const d = p.get('demo');
+      if (d === 'mahasiswa') fillDemo('mahasiswa@gmail.com', 'mahasiswa123');
+      else if (d === 'perusahaan') fillDemo('codenix@gmail.com', 'perusahaan123');
+    });
     function fillDemo(email, pass) {
       document.getElementById('email').value = email;
       document.getElementById('kata_sandi').value = pass;
