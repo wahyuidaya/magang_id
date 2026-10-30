@@ -62,6 +62,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .demo-banner {
       position: relative;
       z-index: 1001;
+      background: #1e3a5f;
+      color: #fff;
+      padding: 14px 20px;
+      text-align: center;
+      font-size: 13.5px;
+      line-height: 1.6;
     }
     .navbar {
       position: static !important;
@@ -71,14 +77,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     .wadah-login {
       margin-top: 30px !important;
-    }
-
-      background: #1e3a5f;
-      color: #fff;
-      padding: 14px 20px;
-      text-align: center;
-      font-size: 13.5px;
-      line-height: 1.6;
     }
     .demo-banner a.back-link {
       display: inline-block;
