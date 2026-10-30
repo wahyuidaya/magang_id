@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $sql);
 $user = mysqli_fetch_assoc($result);
 
 /* === Update status lowongan otomatis === */
-$sqlUpdateStatus = "UPDATE lowongan SET status = 'non-aktif' 
+$sqlUpdateStatus = "UPDATE lowongan SET status = 'nonaktif' 
                     WHERE batas_waktu < CURDATE() AND status = 'aktif'";
 mysqli_query($conn, $sqlUpdateStatus);
 

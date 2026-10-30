@@ -60,6 +60,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="../style.css?v=<?php echo time(); ?>">
   <style>
     .demo-banner {
+      position: relative;
+      z-index: 1001;
+    }
+    .navbar {
+      position: static !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      padding: 12px 24px !important;
+    }
+    .wadah-login {
+      margin-top: 30px !important;
+    }
+
       background: #1e3a5f;
       color: #fff;
       padding: 14px 20px;
