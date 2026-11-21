@@ -116,7 +116,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="demo-banner">
     <div style="margin-bottom: 8px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
       <a href="../portal.php" class="back-link" style="color: #6ee7b7; font-weight: 700;">← Kembali ke Portal Magang ID</a>
-      <a href="https://wahyuidaya.github.io" class="back-link">Portofolio Wahyu Idaya ↗</a>
     </div>
     <strong>🔐 Demo Akun — Klik untuk mengisi otomatis:</strong>
     <div class="demo-accounts">

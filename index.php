@@ -37,7 +37,7 @@ $result2 = mysqli_query($conn, $query2);
         <li><a href="#Lowongan_Terbaru-page">Lowongan</a></li>
         <li><a href="#Perusahaan-page">Perusahaan</a></li>
       </ul>
-      <a href="login_user/login.php"><button class="tombol-masuk-daftar">Login</button></a>
+      <a href="portal.php"><button class="tombol-masuk-daftar">Login</button></a>
     </div>
 
     <!-- Checkbox tersembunyi untuk toggle menu -->
@@ -60,7 +60,7 @@ $result2 = mysqli_query($conn, $query2);
             onclick="document.getElementById('checkbox-menu').checked = false;">Perusahaan</a></li>
       </ul>
       <div style="text-align: center;">
-        <a href="login_user/login.php" class="tombol-login"
+        <a href="portal.php" class="tombol-login"
           onclick="document.getElementById('checkbox-menu').checked = false;">Login</a>
       </div>
     </div>
